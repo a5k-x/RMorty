@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="8dp"
+    app:cardBackgroundColor="#3B2CB7F6"
+    >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_character"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name_character"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@tools:sample/lorem"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/type_character"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@tools:sample/lorem"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/gender_character"
+            android:layout_width="wrap_content"
+            tools:text="@tools:sample/lorem"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,7 +1,9 @@
 package com.a5k.rickandmorty.data.datasourse
 
 import com.a5k.rickandmorty.data.model.DataModel
+import com.a5k.rickandmorty.data.model.Episode
 import retrofit2.Call
+import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
@@ -10,18 +12,13 @@ interface ApiSource {
     //https://rickandmortyapi.com/api/character/?page=3
 
         @GET("character")
-        fun getListCharacter(
+       suspend fun getListCharacter(
             @Query("page") page: Int
-        ): Call<DataModel>
+        ): Response<DataModel>
 
         @GET("character/{id}")
-        fun getCharacter(
+        fun getCharacterDetail(
             @Path("id") id: Int
-        ): Call<Character>
-
-        @GET("episode/{id}")
-        fun getEpisode(
-            @Path("id") id: List<Int>
-        ): Call<List<DataModel.Episode>>
+        ): Response<Character>
 
 }

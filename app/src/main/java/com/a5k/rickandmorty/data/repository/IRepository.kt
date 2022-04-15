@@ -1,10 +1,9 @@
 package com.a5k.rickandmorty.data.repository
 
-import androidx.lifecycle.MutableLiveData
-import com.a5k.rickandmorty.view.AppState
+import com.a5k.rickandmorty.data.model.Character
 
 interface IRepository {
-    fun getCharacterList(liveData: MutableLiveData<AppState>,page:Int)
+    suspend fun getCharacterList(page:Int):List<Character>?
 
-    fun getDetailCharacter(liveData: MutableLiveData<AppState>,idCharacter:Int)
+    //fun getDetailCharacter(liveData: MutableLiveData<AppState>,idCharacter:Int)
 }
