@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_view_margin">10dp</dimen>
+    <dimen name="card_view_elevation">8dp</dimen>
+    <dimen name="card_view_radius">10dp</dimen>
+    <dimen name="item_image_character_size">100dp</dimen>
+    <dimen name="item_character_margin_container">5dp</dimen>
+    <dimen name="name_character_textSize">18sp</dimen>
+    <dimen name="type_character_textSize">14sp</dimen>
+    <dimen name="gender_character_textSize">14sp</dimen>
+    <dimen name="text_field_margin_character">5dp</dimen>
+    <dimen name="image_character_detail_height">200dp</dimen>
+    <dimen name="name_character_details_textSize">24sp</dimen>
+</resources>

@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <color name="GREEN">#8BC34A</color>
+    <color name="RED">#F44336</color>
+    <color name="UNKNOWN">#787878</color>
+
+    <color name="FONE_BACKGROUND">#24282F</color>
+    <color name="CARD_VIEW_BACKGROUND">#3C3E44</color>
+
 </resources>

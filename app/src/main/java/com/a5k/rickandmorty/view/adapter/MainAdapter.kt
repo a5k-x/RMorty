@@ -20,11 +20,11 @@ class MainAdapter:PagedListAdapter<Character,MainAdapter.ViewHolder>(CharacterDi
 
     inner class ViewHolder(val vb:ItemCharacterBinding): RecyclerView.ViewHolder(vb.root) {
         fun bind(item: Character) {
-            vb.nameCharacter.text = item.getName()
-            vb.typeCharacter.text = item.getType()
-            vb.genderCharacter.text = item.getGender()
-            vb.imageCharacter.load(item.getUrlImage())
-            itemView.setOnClickListener { onClickHand.onClick(item) }
+            vb.nameCharacter.text = item.name
+            vb.typeCharacter.text = item.type
+            vb.genderCharacter.text = item.gender
+            vb.imageCharacter.load(item.image)
+            itemView.setOnClickListener { onClickHand.onClick(item.id) }
 
         }
 
@@ -41,5 +41,5 @@ class MainAdapter:PagedListAdapter<Character,MainAdapter.ViewHolder>(CharacterDi
 }
 
 interface OnClickHandler{
-    fun onClick(item: Character)
+    fun onClick(item: Int)
 }

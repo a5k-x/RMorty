@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">Rickandmorty</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="name_character">Имя: </string>
+    <string name="type_character">Расса: </string>
+    <string name="gender_character">Пол: </string>
+    <string name="status_character">Статус: </string>
+    <string name="location_character">Местоположение: </string>
+    <string name="count_episode_character">Количество эпизодов с участием персонажа: </string>
+    <string name="title_toolbar_list_character">Список персонажей</string>
+    <string name="title_toolbar_detail_character">О персонаже</string>
+
 </resources>

@@ -2,46 +2,52 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_margin="10dp"
     android:layout_height="match_parent"
+    android:background="@color/FONE_BACKGROUND"
+    android:orientation="vertical"
     tools:context=".view.DetailCharacterInfoFragment">
 
     <ImageView
         android:id="@+id/image_container"
         android:layout_width="match_parent"
-        android:adjustViewBounds="true"
-        android:layout_height="200dp"/>
-  <TextView
-      android:id="@+id/name_character_details"
-      tools:text="@tools:sample/lorem"
-      android:layout_width="wrap_content"
-      android:textSize="20sp"
-      android:layout_height="wrap_content"/>
+        android:layout_height="@dimen/image_character_detail_height"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/name_character_details"
+        style="@style/Theme.Rickandmorty.DetailDescriptionCharacter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/name_character_details_textSize"
+        android:textStyle="bold"
+        tools:text="@tools:sample/lorem" />
 
     <TextView
         android:id="@+id/species_character_details"
-        tools:text="@tools:sample/lorem"
+        style="@style/Theme.Rickandmorty.DetailDescriptionCharacter"
         android:layout_width="wrap_content"
-        android:textSize="20sp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        tools:text="@tools:sample/lorem" />
+
     <TextView
         android:id="@+id/status_character_details"
-        tools:text="@tools:sample/lorem"
+        style="@style/Theme.Rickandmorty.DetailDescriptionCharacter"
         android:layout_width="wrap_content"
-        android:textSize="20sp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        tools:text="@tools:sample/lorem" />
+
     <TextView
         android:id="@+id/location_character_details"
-        tools:text="@tools:sample/lorem"
+        style="@style/Theme.Rickandmorty.DetailDescriptionCharacter"
         android:layout_width="wrap_content"
-        android:textSize="20sp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        tools:text="@tools:sample/lorem" />
+
     <TextView
         android:id="@+id/count_episode_character_details"
-        tools:text="@tools:sample/lorem"
+        style="@style/Theme.Rickandmorty.DetailDescriptionCharacter"
         android:layout_width="wrap_content"
-        android:textSize="20sp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        tools:text="@tools:sample/lorem" />
 
 </LinearLayout>

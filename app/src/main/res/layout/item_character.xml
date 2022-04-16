@@ -3,55 +3,60 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:layout_margin="5dp"
-    app:cardCornerRadius="10dp"
-    android:elevation="8dp"
-    app:cardBackgroundColor="#3B2CB7F6"
-    >
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:orientation="horizontal"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_view_margin"
+    android:elevation="@dimen/card_view_elevation"
+    app:cardBackgroundColor="@color/CARD_VIEW_BACKGROUND"
+    app:cardCornerRadius="@dimen/card_view_radius">
 
-    <ImageView
-        android:id="@+id/image_character"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-
-        android:adjustViewBounds="true"
-        android:scaleType="centerInside" />
     <LinearLayout
         android:layout_width="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="5dp"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/name_character"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="@tools:sample/lorem"
-            android:textSize="14dp" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/type_character"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="@tools:sample/lorem"
-            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/image_character"
+            android:layout_width="@dimen/item_image_character_size"
+            android:layout_height="@dimen/item_image_character_size"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside" />
 
-        <TextView
-            android:id="@+id/gender_character"
+        <LinearLayout
             android:layout_width="wrap_content"
-            tools:text="@tools:sample/lorem"
-            android:layout_height="wrap_content"
-            android:textSize="14sp" />
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/item_character_margin_container"
+            android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/name_character"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/name_character_textSize"
+                android:textStyle="bold"
+                tools:text="@tools:sample/lorem" />
+
+            <TextView
+                android:id="@+id/type_character"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_field_margin_character"
+                android:textColor="@color/white"
+                android:textSize="@dimen/type_character_textSize"
+                tools:text="@tools:sample/lorem" />
+
+            <TextView
+                android:id="@+id/gender_character"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_field_margin_character"
+                android:textColor="@color/white"
+                android:textSize="@dimen/gender_character_textSize"
+                tools:text="@tools:sample/lorem" />
+
+        </LinearLayout>
 
     </LinearLayout>
-
-</LinearLayout>
-
 
 
 </androidx.cardview.widget.CardView>
